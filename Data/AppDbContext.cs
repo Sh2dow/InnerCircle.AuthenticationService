@@ -1,9 +1,9 @@
-using Data.Models;
+using InnerCircle.Authentication.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using TourmalineCore.AspNetCore.JwtAuthentication.Identity;
 
-namespace Data
+namespace InnerCircle.Authentication.Data
 {
     //Use next command in Package Manager Console to update Dev env DB
     //PM> $env:ASPNETCORE_ENVIRONMENT = 'Debug'; Update-Database

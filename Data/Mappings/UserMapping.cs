@@ -1,8 +1,8 @@
-﻿using Data.Models;
+﻿using InnerCircle.Authentication.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Data.Mappings;
+namespace InnerCircle.Authentication.Data.Mappings;
 
 public class UserMapping : IEntityTypeConfiguration<User>
 {

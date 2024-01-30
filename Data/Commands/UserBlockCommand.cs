@@ -1,6 +1,6 @@
-﻿using Data.Queries;
+﻿using InnerCircle.Authentication.Data.Queries;
 
-namespace Data.Commands;
+namespace InnerCircle.Authentication.Data.Commands;
 
 public class UserBlockCommand
 {

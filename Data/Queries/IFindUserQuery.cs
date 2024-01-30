@@ -1,6 +1,6 @@
-using Data.Models;
+using InnerCircle.Authentication.Data.Models;
 
-namespace Data.Queries
+namespace InnerCircle.Authentication.Data.Queries
 {
     public interface IFindUserQuery
     {

@@ -1,6 +1,6 @@
-﻿using Data.Commands;
-using Data.Models;
-using Data.Queries;
+﻿using InnerCircle.Authentication.Data.Commands;
+using InnerCircle.Authentication.Data.Models;
+using InnerCircle.Authentication.Data.Queries;
 using InnerCircle.Authentication.Service.Services.Models;
 using Microsoft.AspNetCore.Identity;
 

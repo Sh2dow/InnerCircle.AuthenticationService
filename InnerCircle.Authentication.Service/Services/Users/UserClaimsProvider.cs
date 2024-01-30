@@ -1,5 +1,5 @@
 using System.Security.Claims;
-using Data.Queries;
+using InnerCircle.Authentication.Data.Queries;
 using TourmalineCore.AspNetCore.JwtAuthentication.Core.Contract;
 
 namespace InnerCircle.Authentication.Service.Services.Users

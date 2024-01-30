@@ -1,5 +1,5 @@
-using Data.Models;
-using Data.Queries;
+using InnerCircle.Authentication.Data.Models;
+using InnerCircle.Authentication.Data.Queries;
 using Microsoft.AspNetCore.Identity;
 using TourmalineCore.AspNetCore.JwtAuthentication.Core.Contract;
 

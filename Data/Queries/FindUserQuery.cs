@@ -1,7 +1,7 @@
-using Data.Models;
+using InnerCircle.Authentication.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data.Queries
+namespace InnerCircle.Authentication.Data.Queries
 {
     public class FindUserQuery : IFindUserQuery
     {

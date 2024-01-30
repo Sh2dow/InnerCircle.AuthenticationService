@@ -1,11 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InnerCircle.Authentication.Service", "InnerCircle.Authentication.Service\InnerCircle.Authentication.Service.csproj", "{C8554C9D-50F4-45B9-86A3-A3B01BE50753}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{FD3C793F-99AE-4EC3-AE8A-7A3D0210E204}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InnerCircle.Authentication", "Data\InnerCircle.Authentication.csproj", "{FD3C793F-99AE-4EC3-AE8A-7A3D0210E204}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{D6939BF4-E309-4BD5-9B7B-6C0A0C09A4CF}"
 EndProject

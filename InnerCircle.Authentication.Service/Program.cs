@@ -1,9 +1,9 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
-using Data;
-using Data.Commands;
-using Data.Models;
-using Data.Queries;
+using InnerCircle.Authentication.Data;
+using InnerCircle.Authentication.Data.Commands;
+using InnerCircle.Authentication.Data.Models;
+using InnerCircle.Authentication.Data.Queries;
 using InnerCircle.Authentication.Service.Services;
 using InnerCircle.Authentication.Service.Services.Callbacks;
 using InnerCircle.Authentication.Service.Services.Options;
@@ -18,7 +18,6 @@ using TourmalineCore.AspNetCore.JwtAuthentication.Identity.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
-const string defaultConnection = "DefaultConnection";
 
 builder.Services.AddControllers();
 builder.Services.AddCors();
@@ -85,15 +84,14 @@ builder.Host.ConfigureLogging((hostingContext, logging) =>
 
 });
 
-builder
-    .Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddDbContext<AppDbContext>(options =>
         {
-            AppDbContext.ConfigureContextOptions(options, configuration.GetConnectionString(defaultConnection));
+            AppDbContext.ConfigureContextOptions(options, configuration.GetConnectionString("DefaultConnection"));
         }
     );
 
 builder.Services.AddDbContext<AppDbContext>(o =>
-o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var authenticationOptions = configuration.GetSection(nameof(AuthenticationOptions)).Get<RefreshAuthenticationOptions>();
 

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.SqlServer.Metadata;
 
 #nullable disable
 
-namespace Data.Migrations
+namespace InnerCircle.Authentication.Data.Migrations
 {
     public partial class Initial : Migration
     {
