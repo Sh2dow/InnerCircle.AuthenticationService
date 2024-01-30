@@ -92,7 +92,14 @@ builder
         }
     );
 
+builder.Services.AddDbContext<AppDbContext>(o =>
+o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 var authenticationOptions = configuration.GetSection(nameof(AuthenticationOptions)).Get<RefreshAuthenticationOptions>();
+
+
+builder.Services
+    .AddAuthentication();
 
 builder.Services
     .AddJwtAuthenticationWithIdentity<AppDbContext, User, long>()

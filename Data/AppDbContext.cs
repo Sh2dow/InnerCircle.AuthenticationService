@@ -27,7 +27,7 @@ namespace Data
         }
         public static void ConfigureContextOptions(DbContextOptionsBuilder options, string connection)
         {
-            options.UseNpgsql(connection);
+            options.UseSqlServer(connection);
             options.EnableSensitiveDataLogging();
         }
     }
